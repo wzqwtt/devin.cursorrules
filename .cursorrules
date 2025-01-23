@@ -17,7 +17,7 @@ Note all the tools are in python. So in the case you need to do batch processing
 
 You always have an LLM at your side to help you with the task. For simple tasks, you could invoke the LLM by running the following command:
 ```
-python ./tools/llm_api.py --prompt "What is the capital of France?" --provider "anthropic"
+python ./tools/llm_api.py --prompt "What is the capital of France?" --provider "DeepSeek-reasoner"
 ```
 
 The LLM API supports multiple providers:
@@ -34,7 +34,7 @@ But usually it's a better idea to check the content of the file and use the APIs
 
 You could use the `tools/web_scraper.py` file to scrape the web.
 ```
-venv/bin/python ./tools/web_scraper.py --max-concurrent 3 URL1 URL2 URL3
+python ./tools/web_scraper.py --max-concurrent 3 URL1 URL2 URL3
 ```
 This will output the content of the web pages.
 
@@ -42,7 +42,7 @@ This will output the content of the web pages.
 
 You could use the `tools/search_engine.py` file to search the web.
 ```
-venv/bin/python ./tools/search_engine.py "your search keywords"
+python ./tools/search_engine.py "your search keywords"
 ```
 This will output the search results in the following format:
 ```

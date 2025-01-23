@@ -91,6 +91,8 @@ def query_llm(prompt, client=None, model=None, provider="openai"):
                 model = "gpt-4o"
             elif provider == "deepseek":
                 model = "deepseek-chat"
+            elif provider == "DeepSeek-reasoner":
+                model = "deepseek-reasoner"
             elif provider == "anthropic":
                 model = "claude-3-sonnet-20240229"
             elif provider == "gemini":
